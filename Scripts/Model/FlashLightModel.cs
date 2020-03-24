@@ -33,6 +33,7 @@ namespace Geekbrains
                     break;
                 case FlashLightActiveType.Off:
                     _light.enabled = false;
+                    BatteryChargeCurrent = _batteryChargeMax;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(value), value, null);
